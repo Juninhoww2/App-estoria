@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Clima } from '/Users/Junio/Documents/App-estoria/appestoria/src/providers/clima';
+import { HttpModule } from '@angular/http';
 
 @Component({
   selector: 'app-previsao-do-tempo',
@@ -8,6 +9,13 @@ import { Clima } from '/Users/Junio/Documents/App-estoria/appestoria/src/provide
   styleUrls: ['./previsao-do-tempo.page.scss'],
 })
 export class PrevisaoDoTempoPage implements OnInit {
+  buscaCep() {
+    const cepValue = this.contatoForm.controls['cep'].value;
+    const isValid = this.contatoForm.controls['cep'].valid;
+      if(isValid) {
+        this.http.get(`https://viacep.com.br/ws/0100100/json/`)
+      }
+  }
 
   constructor() { }
 
@@ -33,4 +41,4 @@ export class PrevisaoPage {
       });
   }
 
-}
+};

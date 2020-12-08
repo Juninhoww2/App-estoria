@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'previsao-do-tempo',
     loadChildren: () => import('./previsao-do-tempo/previsao-do-tempo.module').then( m => m.PrevisaoDoTempoPageModule)
+  },
+  {
+    path: 'lista',
+    loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
   }
 ];
 
