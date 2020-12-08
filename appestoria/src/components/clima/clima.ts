@@ -1,17 +1,19 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+/*
+    import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-@Component({
-  selector: 'clima',
-  templateUrl: 'clima.html'
-})
-export class ClimaEl {
-  @Input() clima: Object;
-  @Output() verMais: EventEmitter<Object> = new EventEmitter();
+    @Component({
+    selector: 'clima',
+    templateUrl: 'clima.html'
+    })
+    export class ClimaEl {
+    @Input() clima: Object;
+    @Output() verMais: EventEmitter<Object> = new EventEmitter();
 
-  constructor() {}
+    constructor() {}
 
-  clickClima() {
-    this.verMais.next(this.clima);
-  }
+    clickClima() {
+        this.verMais.next(this.clima);
+    }
 
-}
+    }
+*/

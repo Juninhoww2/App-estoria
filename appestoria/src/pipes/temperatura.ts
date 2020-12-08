@@ -1,3 +1,4 @@
+/*
 import { Injectable, Pipe } from '@angular/core';
 
 @Pipe({
@@ -19,3 +20,4 @@ export class TemperaturaPipe {
     return r;
   }
 }
+*/
