@@ -13,6 +13,11 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
+      title: 'Previsao do Tempo',
+      url: '/folder/previsaodotempo'
+      icon: 'cloud-outline'
+    },
+    {
       title: 'Inbox',
       url: '/folder/Inbox',
       icon: 'mail'
