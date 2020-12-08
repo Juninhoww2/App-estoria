@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'Previsao do Tempo',
-      url: '/folder/previsaodotempo'
-      icon: 'cloud-outline'
+      url: '/folder/previsaodotempo',
+      icon: 'cloud'
     },
     {
       title: 'Inbox',
