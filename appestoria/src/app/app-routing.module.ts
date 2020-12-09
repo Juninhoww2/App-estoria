@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'localizacao',
     loadChildren: () => import('./localizacao/localizacao.module').then( m => m.LocalizacaoPageModule)
+  },
+  {
+    path: 'facebook',
+    loadChildren: () => import('./facebook/facebook.module').then( m => m.FacebookPageModule)
   }
 ];
 
