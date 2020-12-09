@@ -98,4 +98,8 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-facebook4" spec="^2.3.0">
+        <variable name="APP_ID" value="425071262189410" />
+        <variable name="APP_NAME" value="fblogin" />
+        <variable name="ANDROID_SDK_VERSION" value="4.+" />
 </widget>
