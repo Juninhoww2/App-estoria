@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       icon: 'location'
     },
     {
-      title: 'Facebook',
+      title: 'Usuário',
       url: 'facebook',
       icon: 'log-in'
     },
