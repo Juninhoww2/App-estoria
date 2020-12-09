@@ -14,9 +14,14 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Previsao do Tempo',
-      url: '/folder/previsaodotempo',
-      icon: 'cloud'
+      title: 'Geo localização',
+      url: 'localizacao',
+      icon: 'location'
+    },
+    {
+      title: 'Converter Moeda',
+      url: 'converter-moeda',
+      icon: 'cash'
     },
     {
       title: 'Lista',

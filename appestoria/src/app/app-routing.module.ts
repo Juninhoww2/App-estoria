@@ -11,13 +11,18 @@ const routes: Routes = [
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
-  {
-    path: 'previsao-do-tempo',
-    loadChildren: () => import('./previsao-do-tempo/previsao-do-tempo.module').then( m => m.PrevisaoDoTempoPageModule)
-  },
+
   {
     path: 'lista',
     loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'converter-moeda',
+    loadChildren: () => import('./converter-moeda/converter-moeda.module').then( m => m.ConverterMoedaPageModule)
+  },
+  {
+    path: 'localizacao',
+    loadChildren: () => import('./localizacao/localizacao.module').then( m => m.LocalizacaoPageModule)
   }
 ];
 

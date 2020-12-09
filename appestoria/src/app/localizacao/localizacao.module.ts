@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PrevisaoDoTempoPageRoutingModule } from './previsao-do-tempo-routing.module';
+import { LocalizacaoPageRoutingModule } from './localizacao-routing.module';
 
-import { PrevisaoDoTempoPage } from './previsao-do-tempo.page';
+import { LocalizacaoPage } from './localizacao.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PrevisaoDoTempoPageRoutingModule
+    LocalizacaoPageRoutingModule
   ],
-  declarations: [PrevisaoDoTempoPage]
+  declarations: [LocalizacaoPage]
 })
-export class PrevisaoDoTempoPageModule {}
+export class LocalizacaoPageModule {}

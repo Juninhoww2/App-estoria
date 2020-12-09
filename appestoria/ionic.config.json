@@ -1,5 +1,7 @@
 {
   "name": "appestoria",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
