@@ -1,40 +1,39 @@
 
 <ion-content>
   <ion-header>
-  <ion-navbar color="primary">
     <ion-title>
     </ion-title>
-  </ion-navbar>
-  <ion-button href="https://fir-ui-demo-84a6c.firebaseapp.com/">Login</ion-button>
+  <ion-body>
+    <ion-div class="containerr">
+      <ion-h2 >Login com mídia social ou manualmente</ion-h2>
+      <ion-input type="text" name="username" placeholder="Username" required>
+      </ion-input>
+      <ion-input type="password" name="password" placeholder="Password" required value="FakePSW" id="myInput">
+      </ion-input>
+      <ion-button href="https://fir-ui-demo-84a6c.firebaseapp.com/">Login</ion-button>
+      <ion-button block color="light">
+        Criar conta
+      </ion-button>
+
+      <ion-p text-center>Ou</ion-p>
+      <ion-button block color="light">
+        Entrar com e-mail e senha
+      </ion-button>
+
+      <ion-button block icon-left color="danger" margin-top >
+        <ion-icon name="logo-google"></ion-icon>
+        Entrar com o Google
+      </ion-button>
+
+      <ion-button class="fb btn" block icon-left margin-top>
+        <ion-icon name="logo-facebook"></ion-icon>
+        Entrar com o Facebook
+      </ion-button>
+
+      <ion-button block icon-left margin-top >
+        <ion-icon name="logo-twitter"></ion-icon>
+        Entrar com o Twitter
+      </ion-button>
+    </ion-div>
+  </ion-body>
 </ion-header>
-<ion-content padding>
-  <div class="container">
-  <button ion-button block color="light" (click)="createAccount()">
-    Criar conta
-  </button>
-
-  <p text-center>Ou</p>
-
-  <button ion-button block (click)="signInWithEmailPage()">
-    Entrar com e-mail e senha
-  </button>
-
-  <button ion-button block icon-left color="danger" margin-top (click)="signInWithGoogle()">
-    <ion-icon name="logo-google"></ion-icon>
-    Entrar com o Google
-  </button>
-
-  <button ion-button block icon-left color="facebook" margin-top (click)="signInWithFacebook()">
-    <ion-icon name="logo-facebook"></ion-icon>
-    Entrar com o Facebook
-  </button>
-
-  <button ion-button block icon-left color="twitter" margin-top (click)="signInWithTwitter()">
-    <ion-icon name="logo-twitter"></ion-icon>
-    Entrar com o Twitter
-  </button>
-  </div>
-</ion-content>
-
-</ion-content>
-

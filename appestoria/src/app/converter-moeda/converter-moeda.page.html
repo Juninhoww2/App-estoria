@@ -1,9 +1,40 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>converter moeda</ion-title>
-  </ion-toolbar>
+
+  <ion-navbar color="primary">
+    <ion-title>Add Holding</ion-title>
+  </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  <button (click)='RetornaMoedaSelecionadas()'>GE</button>
+
+<ion-content padding >
+  <div class="container">
+    <div class="message">
+    </div>
+
+
+    <ion-list class="containerr"> 
+
+
+        <ion-item>
+            <ion-label stacked>Exibir código de moeda</ion-label>
+            <ion-input [(ngModel)]="displayCurrency" placeholder="(ex: USD, CAD, AUD, BRL)" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Quantidade de retenção</ion-label>
+            <ion-input [(ngModel)]="amountHolding" type="number"></ion-input>
+        </ion-item>
+
+    </ion-list>   
+
+    <button ion-button full (click)="addHolding()" [disabled]="checkingValidity">Add Holding <ion-spinner *ngIf="checkingValidity"></ion-spinner></button>
+
+    <p class="error-message" *ngIf="cryptoUnavailable">Sorry, that combination is not currently available. Make sure to only include a single code.</p>
+  </div>
+</ion-content>
+
+
+<ion-content>
 </ion-content>
