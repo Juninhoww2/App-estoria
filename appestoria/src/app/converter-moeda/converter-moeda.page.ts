@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService} from '../services/api.service'; 
 
 @Component({
   selector: 'app-converter-moeda',
@@ -6,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./converter-moeda.page.scss'],
 })
 export class ConverterMoedaPage implements OnInit {
+  
+  constructor(private apiService: ApiService) {
+    this.readData();
+   }
 
-  constructor() { }
+  readData() {
+    this.apiService.readData().subscribe(data => {
+      console.log(data);
+    });
+  } 
   
   ngOnInit() {
   }

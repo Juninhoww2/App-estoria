@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
+
 @Component({
   selector: 'app-localizacao',
   templateUrl: './localizacao.page.html',
