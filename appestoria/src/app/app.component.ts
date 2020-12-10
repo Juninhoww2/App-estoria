@@ -19,6 +19,11 @@ export class AppComponent implements OnInit {
       icon: 'location'
     },
     {
+      title: 'Usuário',
+      url: 'facebook',
+      icon: 'log-in'
+    },
+    {
       title: 'Converter Moeda',
       url: 'converter-moeda',
       icon: 'cash'

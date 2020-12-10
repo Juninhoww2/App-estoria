@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "appestoria"
+    "default": "appestoria",
+    "staging": "appestoria"
   }
 }

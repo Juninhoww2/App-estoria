@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'facebook',
     pathMatch: 'full'
   },
   {
@@ -23,12 +23,17 @@ const routes: Routes = [
   {
     path: 'localizacao',
     loadChildren: () => import('./localizacao/localizacao.module').then( m => m.LocalizacaoPageModule)
+  },
+  {
+    path: 'facebook',
+    loadChildren: () => import('./facebook/facebook.module').then( m => m.FacebookPageModule)
   }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    
   ],
   exports: [RouterModule]
 })
