@@ -1,9 +1,11 @@
-
+<ion-img src="../../assets/undraw_Taking_notes_re_bnaf.svg"></ion-img>
 
 <!-- Checkboxes in a List -->
+<ion-content>
 <ion-list>
   <ion-item *ngFor="let entry of form">
     <ion-label>{{entry.val}}</ion-label>
     <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
   </ion-item>
 </ion-list>
+</ion-content>
