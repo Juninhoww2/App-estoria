@@ -1,23 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ApiService} from '../services/api.service'; 
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-converter-moeda',
   templateUrl: './converter-moeda.page.html',
   styleUrls: ['./converter-moeda.page.scss'],
 })
-export class ConverterMoedaPage implements OnInit {
+export class ConverterMoedaPage  {
   
-  constructor(private apiService: ApiService) {
-    this.readData();
-   }
-
-  readData() {
-    this.apiService.readData().subscribe(data => {
-      console.log(data);
-    });
-  } 
-  
+  constructor() { }
   ngOnInit() {
   }
   

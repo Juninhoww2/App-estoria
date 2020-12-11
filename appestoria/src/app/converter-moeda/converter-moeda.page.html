@@ -1,12 +1,26 @@
 
-<ion-header>
+<ion-header class="containerrr">
 
-  <ion-navbar color="primary">
-    <ion-title>Add Holding</ion-title>
+  <ion-navbar color="black">
+    <ion-title>Poder do Real</ion-title>
   </ion-navbar>
 
 </ion-header>
-
+<ion-button icon-left color="danger">
+  <ion-icon name="cash"></ion-icon>
+  USD/BRL:1 Dólar americano igual a
+  5,03 Real brasileiro
+</ion-button>
+<ion-button icon-left color="danger">
+  <ion-icon name="cash"></ion-icon>
+  CAD/BRL:1 Dólar canadense igual a
+  3,95 Real brasileiro  
+</ion-button>
+<ion-button icon-left color="danger">
+  <ion-icon name="cash"></ion-icon>
+  EUR/BRL:1 Euro igual a
+  6,11 Real brasileiro 
+</ion-button>
 
 <ion-content padding >
   <div class="container">
@@ -28,9 +42,6 @@
         </ion-item>
 
     </ion-list>   
-
-    <button ion-button full (click)="addHolding()" [disabled]="checkingValidity">Add Holding <ion-spinner *ngIf="checkingValidity"></ion-spinner></button>
-
     <p class="error-message" *ngIf="cryptoUnavailable">Sorry, that combination is not currently available. Make sure to only include a single code.</p>
   </div>
 </ion-content>

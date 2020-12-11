@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       icon: 'log-in'
     },
     {
-      title: 'Converter Moeda',
+      title: 'Poder do Real',
       url: 'converter-moeda',
       icon: 'cash'
     },
@@ -32,6 +32,11 @@ export class AppComponent implements OnInit {
       title: 'Lista',
       url: 'lista',
       icon: 'checkbox'
+    },
+    {
+      title: 'Settings',
+      url: 'settings',
+      icon: 'settings'
     }
   ];
   
