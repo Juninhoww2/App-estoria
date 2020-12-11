@@ -32,6 +32,11 @@ export class AppComponent implements OnInit {
       title: 'Lista',
       url: 'lista',
       icon: 'checkbox'
+    },
+    {
+      title: 'Settings',
+      url: 'settings',
+      icon: 'settings'
     }
   ];
   

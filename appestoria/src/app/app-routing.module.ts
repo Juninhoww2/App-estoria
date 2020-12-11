@@ -27,7 +27,11 @@ const routes: Routes = [
   {
     path: 'facebook',
     loadChildren: () => import('./facebook/facebook.module').then( m => m.FacebookPageModule)
+  },  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   }
+
 ];
 
 @NgModule({
