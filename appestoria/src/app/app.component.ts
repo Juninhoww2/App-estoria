@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       icon: 'log-in'
     },
     {
-      title: 'Converter Moeda',
+      title: 'Poder do Real',
       url: 'converter-moeda',
       icon: 'cash'
     },

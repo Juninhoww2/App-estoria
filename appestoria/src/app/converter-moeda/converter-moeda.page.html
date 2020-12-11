@@ -42,9 +42,6 @@
         </ion-item>
 
     </ion-list>   
-
-    <button ion-button full (click)="addHolding()" [disabled]="checkingValidity">Add Holding <ion-spinner *ngIf="checkingValidity"></ion-spinner></button>
-
     <p class="error-message" *ngIf="cryptoUnavailable">Sorry, that combination is not currently available. Make sure to only include a single code.</p>
   </div>
 </ion-content>
