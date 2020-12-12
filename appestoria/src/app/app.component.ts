@@ -34,6 +34,11 @@ export class AppComponent implements OnInit {
       icon: 'checkbox'
     },
     {
+      title: 'Previsão do Tempo',
+      url: 'previsaodo-tempo',
+      icon: 'cloud'
+    },
+    {
       title: 'Settings',
       url: 'settings',
       icon: 'settings'
