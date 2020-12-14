@@ -1,6 +1,7 @@
 # App-estoria
+Ionic-5 And Angular 
 
-run npm install, ionic serve
+in the terminal run: npm install, ionic serve 
 
 Deploy in Firebase 
 https://appestoria.web.app/
