@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ImageModal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]="sliderOpts">
+    <ion-slide *ngFor="let img of [1, 2]">
+      <img src="../../assets/img/{{ img }}.jpg" tappable (click)="openPreview(img)">
+    </ion-slide>
+  </ion-slides>
+   
+</ion-content>

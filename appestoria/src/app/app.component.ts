@@ -39,6 +39,10 @@ export class AppComponent implements OnInit {
       icon: 'cloud'
     },
     {
+      title: 'Image Galeria com Zoom',
+      url: 'image-modal',
+    },
+    {
       title: 'Settings',
       url: 'settings',
       icon: 'settings'

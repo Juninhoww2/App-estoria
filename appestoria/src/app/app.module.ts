@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { Facebook } from '@ionic-native/facebook/ngx';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ImageModalPageModule } from './image-modal/image-modal.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ImageModalPageModule
   ],
   providers: [
     StatusBar,
