@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'previsaodo-tempo',
     loadChildren: () => import('./previsaodo-tempo/previsaodo-tempo.module').then( m => m.PrevisaodoTempoPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
 
 ];
