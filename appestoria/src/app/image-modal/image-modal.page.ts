@@ -7,15 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageModalPage implements OnInit {
 
-  sliderOpts = {
-    zoom: false,
-    sliderPerView: 1.5,
-    centeredSlides: true,
-    spaceBetween: 20
-  };
 
 
-  constructor(private modalController: ModalController) {
+  constructor() {
 
    }
 
